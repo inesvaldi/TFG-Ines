@@ -18,7 +18,7 @@ interface Ethernet1
    no switchport
 !
 interface Ethernet2
-   description "LAN-1 interface (c1 <-> r1)"
+   description "LAN-1 interface (s1 <-> r1)"
    ip address 10.0.1.1 255.255.255.0
    no switchport
 !

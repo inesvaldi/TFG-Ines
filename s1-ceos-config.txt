@@ -21,7 +21,7 @@ interface Ethernet2
    switchport
 !
 interface Ethernet3
-   description "Peering interface with router r1"
+   description "LAN-1 interface with router r1"
    switchport
 !
 end
