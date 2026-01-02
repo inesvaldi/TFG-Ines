@@ -4,7 +4,6 @@ echo 'Destroying containerlab topology with two Arista cEOS routers, two Arista 
 
 sudo containerlab destroy --topo telemetry-testbed-arista-ceos-lab.yaml
 
-sudo rm .telemetry-testbed-arista-ceos-lab.yaml.bak
 sudo rm -Rf clab-telemetry-testbed-arista-ceos-lab/
 
 echo 'Done!'

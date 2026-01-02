@@ -1,4 +1,4 @@
-name: telemetry-testbed-arista-ceos-lab
+name: telemetry-testbed-cisco-xe-arista-ceos-lab
 
 topology:
   nodes:
@@ -11,7 +11,7 @@ topology:
       kind: linux
       type: ubuntu-20.04-bionic
       group: server
-      image: giros-dit/clab-telemetry-testbed-ubuntu:latest
+      image: giros-dit/clab-telemetry-testbed-ubuntu:latest    
     s1:
       kind: ceos
       type: arista-ceos
@@ -19,11 +19,11 @@ topology:
       image: ceos:4.34.4M
       startup-config: s1-ceos-config.txt
     r1:
-      kind: ceos
-      type: arista-ceos
+      kind: vr-csr
+      image: vrnetlab/vr-csr:17.03.04
+      type: cisco-xe-csr1000v
       group: router
-      image: ceos:4.34.4M
-      startup-config: r1-ceos-config.txt
+      startup-config: r1-xe-config.txt
     r2:
       kind: ceos
       type: arista-ceos
