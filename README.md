@@ -126,7 +126,7 @@ The router devices of the network topology (i.e., `r1` and `r2`) are configured 
 
 >**Note**: The Cisco IOS XE CSR1000v network operating system, which is used by the router `r1`in this network scenario, supports the YANG data modeling language and the RESTCONF protocol for OpenConfig YANG data models. It also supports both the JSON and XML data encoding formats.
 
-The following is an example of a RESTCONF query operation using the cURL tool and JSON data encoding format to request configuration and operational state information about all the network interfaces of the router `r1`:
+The following is an example of a RESTCONF query operation using the cURL tool and JSON data encoding format to request configuration information about all the network interfaces of the router `r1`:
 ```bash
 curl -s GET 'https://clab-telemetry-testbed-cisco-xe-arista-ceos-lab-r1/restconf/data/ietf-interfaces:interfaces' --header 'Accept: application/yang-data+json' -u admin:admin  --insecure 
 ```
@@ -134,6 +134,16 @@ curl -s GET 'https://clab-telemetry-testbed-cisco-xe-arista-ceos-lab-r1/restconf
 The following is an example of the same query operation, but using XML data encoding:
 ```bash
 curl -s GET 'https://clab-telemetry-testbed-cisco-xe-arista-ceos-lab-r1/restconf/data/ietf-interfaces:interfaces' --header 'Accept: application/yang-data+xml' -u admin:admin  --insecure 
+```
+
+The following is an example of a RESTCONF query operation using the cURL tool and JSON data encoding format to request operational state information about all the network interfaces of the router `r1`:
+```bash
+curl -s GET 'https://clab-telemetry-testbed-cisco-xe-arista-ceos-lab-r1/restconf/data/ietf-interfaces:interfaces-state' --header 'Accept: application/yang-data+json' -u admin:admin  --insecure 
+```
+
+The following is an example of the same query operation, but using XML data encoding:
+```bash
+curl -s GET 'https://clab-telemetry-testbed-cisco-xe-arista-ceos-lab-r1/restconf/data/ietf-interfaces:interfaces-state' --header 'Accept: application/yang-data+xml' -u admin:admin  --insecure 
 ```
 
 ### Destroying the network topology
