@@ -10,7 +10,7 @@ topology:
     arista_ceos:
       type: arista-ceos
       group: switch
-      image: ceos:4.34.5M
+      image: ceos:4.34.4M
     ovs-bridge:
       type: ovs-bridge
       group: switch

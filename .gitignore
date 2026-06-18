@@ -10,3 +10,6 @@ clab-telemetry-testbed-3nodes
 clab-telemetry-testbed-l3-topology
 .git
 .github
+docker/
+# Carpetas generadas por containerlab en subdirectorios
+clab-*/

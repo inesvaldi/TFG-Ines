@@ -42,6 +42,9 @@ management api gnmi
 management api netconf
    transport ssh default
 !
+management api http-commands
+   no shutdown
+!
 interface Management0
    description "Management interface"
 !
@@ -61,14 +64,14 @@ ip routing
 !
 security pki certificate generate self-signed restconf.crt key restconf.key generate rsa 2048 parameters common-name restconf
 !   
-management security 
+management security
    ssl profile restconf
-   certificate restconf.crt key restconf.key
+      certificate restconf.crt key restconf.key
 !
-management api restconf 
+management api restconf
    transport https test
-   ssl profile restconf
-   port 5900
-   ip access-group custom-cp
+      ssl profile restconf
+      port 5900
+      ip access-group custom-cp
 !
 end
