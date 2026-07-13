@@ -1,0 +1,22 @@
+{
+   "ietf-interfaces:interfaces": {
+        "interface": [
+            {
+                "name": "GigabitEthernet3",
+                "description": "r1 <-> r2",
+                "type": "iana-if-type:ethernetCsmacd",
+                "enabled": true, 
+                "ietf-ip:ipv4": {
+                    "address": [ 
+                        {
+                            "ip": "10.10.10.1",
+                            "netmask": "255.255.255.252"
+                        } 
+                    ] 
+                } 
+            } 
+            
+        ] 
+      
+    } 
+}

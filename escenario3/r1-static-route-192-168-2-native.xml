@@ -1,0 +1,11 @@
+<ip xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+    <route>
+        <ip-route-interface-forwarding-list>
+            <prefix>192.168.2.0</prefix>
+            <mask>255.255.255.0</mask>
+            <fwd-list>
+                <fwd>10.10.10.2</fwd>
+            </fwd-list>
+        </ip-route-interface-forwarding-list>
+    </route>
+</ip>

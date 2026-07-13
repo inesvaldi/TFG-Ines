@@ -1,0 +1,44 @@
+{
+  "openconfig-network-instance:config": {
+    "identifier": "openconfig-policy-types:STATIC",
+    "name": "default"
+  },
+  "openconfig-network-instance:static-routes": {
+    "static": [
+      {
+        "prefix": "192.168.1.0/24",
+        "config": {
+          "prefix": "192.168.1.0/24"
+        },
+        "next-hops": {
+          "next-hop": [
+            {
+              "index": "10.10.11.1",
+              "config": {
+                "index": "10.10.11.1",
+                "next-hop": "10.10.11.1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "prefix": "192.168.2.0/24",
+        "config": {
+          "prefix": "192.168.2.0/24"
+        },
+        "next-hops": {
+          "next-hop": [
+            {
+              "index": "10.10.12.1",
+              "config": {
+                "index": "10.10.12.1",
+                "next-hop": "10.10.12.1"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

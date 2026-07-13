@@ -1,0 +1,30 @@
+!!! CISCO CSR1000v r1 configuration !!!
+
+! Interfaces configuration
+
+! GigabitEthernet2 (s1 <-> r1)
+interface GigabitEthernet2
+ no shutdown
+!
+
+! GigabitEthernet3 (r1 <-> r2)
+interface GigabitEthernet3
+ no shutdown
+!
+
+! GigabitEthernet4 (r1 <-> r3)
+interface GigabitEthernet4
+ no shutdown
+!
+
+! Configuring RESTCONF
+ip http secure-server
+ip http authentication local
+restconf
+aaa new-model
+aaa authentication login default local
+aaa authorization exec default local
+aaa session-id common
+!
+
+!!! END CONFIG !!!

@@ -1,0 +1,37 @@
+{
+    "interface": [
+        {
+            "name": "Ethernet3",
+            "config":{
+                "name": "Ethernet3",
+                "description": "Peering interface with router r3 (r2 <-> r3)",
+                "type": "iana-if-type:ethernetCsmacd",
+                "enabled": true
+            },
+            "subinterfaces":{
+                "subinterface":[
+                    {
+                        "index": 0,
+                        "config":{
+                            "index": 0,
+                            "description":"Peering interface with router r3 (r2 <-> r3)"
+                        },
+                        "openconfig-if-ip:ipv4":{
+                            "addresses":{
+                                "address":[
+                                    {
+                                        "ip": "10.10.12.1",
+                                        "config":{
+                                            "ip": "10.10.12.1",
+                                            "prefix-length": 30
+                                        } 
+                                    } 
+                                ] 
+                            } 
+                        }  
+                    } 
+                ] 
+            }    
+        }  
+    ] 
+}

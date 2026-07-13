@@ -1,0 +1,14 @@
+<routing-protocol xmlns="urn:ietf:params:xml:ns:yang:ietf-routing">
+    <type>static</type>
+    <name>1</name>
+    <static-routes>
+        <ipv4>
+            <route>
+                <destination-prefix>192.168.2.0/24</destination-prefix>
+                <next-hop>
+                    <next-hop-address>10.10.10.2.0</next-hop-address>
+                </next-hop>
+            </route>
+        </ipv4>
+    </static-routes>
+</routing-protocol>
